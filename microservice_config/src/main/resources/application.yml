@@ -2,12 +2,16 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/tuusuario/tu-repositorio-configuracion
+          uri: https://github.com/DavCoder22/microservices-config-github.git # Cambia esta URL por la URL de tu repositorio
+          searchPaths: config
           clone-on-start: true
+      label: main  # Rama principal del repositorio
 
 eureka:
   client:
