@@ -24,12 +24,15 @@ import lombok.NoArgsConstructor;
 
 
 public class Material {
+    
+    public enum TipoMaterial {
+            resina, filamento
+        }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, length = 255)
     private String nombre;
 
     @Enumerated(EnumType.STRING)
@@ -48,7 +51,5 @@ public class Material {
     @Column(name = "fechaActualizacion")
     private LocalDateTime fechaActualizacion;
 
-    public enum TipoMaterial {
-        RESINA, FILAMENTO
-    }
+    
 }

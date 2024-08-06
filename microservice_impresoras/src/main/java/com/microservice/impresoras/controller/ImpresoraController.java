@@ -7,7 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
+
 
 @RestController
 @RequestMapping("/api/v1/impresoras")
@@ -45,5 +48,24 @@ public class ImpresoraController {
     @ResponseStatus(HttpStatus.OK)
     public void deletePrinter(@PathVariable Long id) {
         impresoraService.deleteById(id);
+    }
+
+    // Nuevas funcionalidades
+    @GetMapping("/conteo-tipo")
+    public ResponseEntity<Map<String, Long>> conteoPorTipo() {
+        Map<String, Long> conteoPorTipo = impresoraService.conteoPorTipo();
+        return new ResponseEntity<>(conteoPorTipo, HttpStatus.OK);
+    }
+
+    @GetMapping("/filamento/promedio-costo-por-hora")
+    public ResponseEntity<BigDecimal> promedioCostoPorHoraFilamento() {
+        BigDecimal promedio = impresoraService.promedioCostoPorHora("filamento");
+        return new ResponseEntity<>(promedio, HttpStatus.OK);
+    }
+
+    @GetMapping("/resina/promedio-costo-por-hora")
+    public ResponseEntity<BigDecimal> promedioCostoPorHoraResina() {
+        BigDecimal promedio = impresoraService.promedioCostoPorHora("resina");
+        return new ResponseEntity<>(promedio, HttpStatus.OK);
     }
 }

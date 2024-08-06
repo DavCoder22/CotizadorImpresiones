@@ -28,7 +28,6 @@
         <module>microservice_pagos</module>
         <module>microservice_cotizacion</module>
         <module>microservice_historial</module>
-        <module>microservice_materiales</module>
     </modules>
 
 

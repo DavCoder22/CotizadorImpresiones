@@ -16,6 +16,11 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Impresora {
+
+    public enum TipoImpresora {
+        RESINA,
+        FILAMENTO
+    } 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -38,10 +43,7 @@ public class Impresora {
 
 }
 
-enum TipoImpresora {
-    RESINA,
-    FILAMENTO
-}
+
 
 
 
