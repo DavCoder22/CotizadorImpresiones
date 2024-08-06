@@ -3,16 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>org.example</groupId>
+        <artifactId>CotizadorImpresiones</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.proyectoprog</groupId>
-    <artifactId>materiales-service</artifactId>
+    <groupId>com.microservice</groupId>
+    <artifactId>microservice_materiales</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>materiales-service</name>
+    <name>microservice_materiales</name>
     <description>Proyecto para gestionar tipos de materiales de impresión 3D</description>
 
     <properties>

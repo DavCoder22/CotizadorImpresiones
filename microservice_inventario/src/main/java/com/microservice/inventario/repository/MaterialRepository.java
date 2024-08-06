@@ -1,7 +1,9 @@
-package com.microservice.inventario.persistence;
-import com.microservice.inventario.entities.Material;
+package com.microservice.inventario.repository;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.microservice.inventario.entities.Material;
 
 @Repository
 public interface MaterialRepository extends JpaRepository<Material, Integer> {

@@ -1,4 +1,4 @@
-package com.proyectoprog.materiales;
+package com.microservice.materiales;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

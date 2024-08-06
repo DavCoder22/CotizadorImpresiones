@@ -3,20 +3,20 @@ server:
 
 spring:
   application:
-    name: microservice_cotizacion
+    name: microservice_inventario
   cloud:
     config:
       uri: http://localhost:8888
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cotizadorbdd2
+    url: jdbc:mysql://localhost:3308/cotizadorbdd2
     username: root
     password: Abue2679522
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   client:
