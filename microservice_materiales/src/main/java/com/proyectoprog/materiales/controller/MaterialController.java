@@ -1,9 +1,8 @@
-package com.microservice.materiales.controller;
+package com.proyectoprog.materiales.controller;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.microservice.materiales.model.Material;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microservice.materiales.service.MaterialService;
+import com.proyectoprog.materiales.model.Material;
+import com.proyectoprog.materiales.service.MaterialService;
 
 import jakarta.validation.Valid;
 

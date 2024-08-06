@@ -3,7 +3,7 @@ spring:
     name: msvc-impresoras
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cotizadorbbd2
+    url: jdbc:mysql://localhost:3308/cotizadorbbd2
     username: root
     password: Abue2679522
 

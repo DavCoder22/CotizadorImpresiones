@@ -1,4 +1,4 @@
-package com.proyectoprog.materiales;
+package com.microservice.materiales;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

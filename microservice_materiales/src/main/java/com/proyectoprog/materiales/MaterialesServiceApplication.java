@@ -1,13 +1,13 @@
-package com.microservice.inventario;
+package com.proyectoprog.materiales;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroserviceInventariosApplication {
+public class MaterialesServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceInventariosApplication.class, args);
+		SpringApplication.run(MaterialesServiceApplication.class, args);
 	}
 
 }

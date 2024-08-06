@@ -1,10 +1,10 @@
-package com.microservice.materiales;
+package com.microservice.inventario;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MaterialesServiceApplicationTests {
+class MicroserviceImpresorasApplicationTests {
 
 	@Test
 	void contextLoads() {

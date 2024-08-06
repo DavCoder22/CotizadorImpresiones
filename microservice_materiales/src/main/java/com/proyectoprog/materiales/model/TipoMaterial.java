@@ -1,4 +1,4 @@
-package com.microservice.materiales.model;
+package com.proyectoprog.materiales.model;
 
 public enum TipoMaterial {
     RESINA,

@@ -1,13 +1,13 @@
-package com.microservice.materiales.service;
+package com.proyectoprog.materiales.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.microservice.materiales.model.Material;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.microservice.materiales.repository.MaterialRepository;
+import com.proyectoprog.materiales.model.Material;
+import com.proyectoprog.materiales.repository.MaterialRepository;
 
 @Service
 public class MaterialService {
